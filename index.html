@@ -16,9 +16,41 @@
 
     <section class="slideshow">
 
-        <img id="banner" src="imagens/slide1.png">
+        <img id="banner" src="img/slide1.png">
 
     </section>
+
+    <section class="camera">
+
+        <h2>Feedback Inteligente</h2>
+
+        <p>
+            Ative a câmera e capture uma cena para receber
+            feedback automático da IA.
+        </p>
+
+        <video id="camera" autoplay></video>
+
+        <canvas id="canvas"></canvas>
+
+        <div class="botoes">
+
+            <button onclick="abrirCamera()">
+                Ativar Câmera
+            </button>
+
+            <button onclick="capturar()">
+                Capturar Cena
+            </button>
+
+        </div>
+
+        <div id="resultado">
+
+        </div>
+
+    </section>
+
 
 </body>
 
