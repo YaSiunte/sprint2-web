@@ -73,6 +73,15 @@ button:hover{
     color:#fff;
 }
 
+#resultado{
+    width:100%;
+    max-width:700px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    font-size:18px;
+}
+
 
 
 
