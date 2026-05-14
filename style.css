@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:Arial;
+    font-family:'Work Sans';
     background-color:#131320;
     color:#222;
 }
@@ -32,6 +32,14 @@ body{
 
 .camera p{
     text-align:center;
+    color:#fff;
+    font-size: 20px;
+}
+
+.camera h2{
+    color:#fff;
+    font-size:35px;
+    font-family:'Montserrat';
 }
 
 video{
@@ -57,5 +65,14 @@ button{
     cursor:pointer;
     border-radius:8px;
     transition:0.3s;
+    font-family:'Work Sans';
 }
+
+button:hover{
+    background-color:#196297;
+    color:#fff;
+}
+
+
+
 
