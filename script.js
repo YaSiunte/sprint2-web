@@ -28,4 +28,34 @@ async function abrirCamera(){
     video.srcObject = stream;
 }
 
+async function capturar(){
 
+    let video = document.getElementById("camera");
+    let canvas = document.getElementById("canvas");
+    let contexto = canvas.getContext("2d");
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    contexto.drawImage(video, 0, 0);
+
+    let resultado = document.getElementById("resultado");
+
+    resultado.innerHTML =
+    "Analisando imagem...";
+
+    const reconhecimento = await Tesseract.recognize(
+        canvas,
+        "eng"
+    );
+
+    let texto = reconhecimento.data.text;
+
+    if(texto.length < 5){
+        resultado.innerHTML =
+        "Melhore a iluminação ou aproxime a câmera.";
+    }
+
+    else{
+        resultado.innerHTML =
+        "Imagem capturada com ótima qualidade.";
+    }
+}
