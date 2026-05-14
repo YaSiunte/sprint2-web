@@ -1,4 +1,4 @@
-alert("Bem-vindo ao Jovi Vision!");
+alert("Bem-vindo ao Jovi Smart Camera!");
 
 let imagens = [
     "img/slide1.png",
@@ -19,19 +19,13 @@ function trocarImagem(){
 setInterval(trocarImagem, 3000);
 
 async function abrirCamera(){
-
     let video = document.getElementById("camera");
-
     let stream = await navigator.mediaDevices.getUserMedia({
-
         video:{
             facingMode:"environment"
         }
-
     });
-
     video.srcObject = stream;
-
 }
 
 
