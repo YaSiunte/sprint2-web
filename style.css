@@ -82,7 +82,34 @@ button:hover{
     font-size:18px;
 }
 
+.login{     
+    padding:50px 10%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background:#131320;
+}
 
+.login input{
+    padding:15px;
+    font-size:16px;
+}
+
+.login h2{
+    color: #fff;
+}
+
+.tema{
+    text-align:center;
+    padding:40px;
+}
+
+footer{
+    background:#131320;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
 
 
